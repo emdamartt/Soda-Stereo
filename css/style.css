@@ -8,9 +8,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
 /* Estilos Index */
-body {
-    margin-top: -30px;
-}
 /*Imagen de Portada*/
 .wallp-image{
     background-image: url(../assets/img/fondo\ inicio.jpg);
@@ -29,7 +26,11 @@ body {
 
 /* Estilos links navbar index*/
 .containerCont {
+    
     background-color: rgb(0, 0, 0);
+}
+.navbar-rest {
+    margin-top: -30px;
 }
 .nav-link {
     font-family: 'Oswald', sans-serif;
@@ -57,7 +58,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 3.3em;
     animation: backInLeft; 
-    animation-duration: 3s;
+    animation-duration: 5s;
 }
 /* Parrafos index */
 .title-index p{
@@ -81,54 +82,31 @@ body {
     margin: 0 !important;
     padding: 1.563rem;
 }
-
-/* #gallery img:hover {
-    border: 5px solid rgba(78, 77, 77, 0.658);
-    -webkit-transform: scale(1.06);
-    transform: scale(1.05);
-} */
                                                 /*Fin de Galeria index*/
-
-/* HTML de Historia */
-
 /* Estilos Html Contactos */
                                                 /* Backgroud image form */
 #form {
-    position: relative;
     width: 500px;
-    margin: 50px auto 100px auto;
     backdrop-filter: blur(2px);
 }
 .contacto {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100%;
     background-image: url(../assets/img/fondo\ Contactos2.jpg);
+    background-position: center;
     background-size:cover;
-    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
 .contacto-form {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 50px 0 0px 0;
     font-size: 2.3em;
     text-align: center;
     letter-spacing: 7px;
-} 
-.contacto-form{
-    font-size: 50px;
-    margin-top: 250px;
     font-family: 'Oswald', sans-serif;
-    color: rgba(255, 255, 255, 0.582);
-    justify-content: center;
-}
+    color: rgba(255, 255, 255, 0.918);
+    padding: 50px 0;
+} 
 input {
     font-family: 'Oswald', sans-serif;
     font-size: 0.875em;
-    width: 470px;
     height: 3.125rem;
     padding: 0px 15px 0px 15px;
     outline: none;
@@ -145,8 +123,6 @@ input:hover {
     color: #e2dedb;
 }
 textarea {
-    width: 470px;
-    max-width: 470px;
     height: 6.875rem;
     max-height: 110px;
     padding: 15px;
@@ -167,7 +143,6 @@ textarea:hover {
     color: #e2dedb;
 }
 #submit {
-    width: 470px;
     padding: 0;
     margin: -5px 0px 0px 0px;
     font-family: 'Oswald', sans-serif;
@@ -178,10 +153,20 @@ textarea:hover {
     border: solid 1px #b3aca7;
     border-top: none;
 }
+/* media queries html contacto */
+@media (max-width:520px){
+    #form {
+        width: 80%;
+}
+.contacto-form {
+    font-size: 1.5em;
+} 
+}
 /* Pseudoclases Hover y Focus del form */
 
 #submit:hover {
-    color: #e2dedb;
+    background-color: #e2dedb;
+    color: black;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #aca49c;
@@ -278,11 +263,11 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 }
 .card {
     position: relative;
-    width: 18.75rem;
+    width: 100%;
     height: 21.875rem;
     background: transparent;
 }
-.card .face {
+.face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -291,18 +276,17 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     overflow: hidden;
     transition: .9s;
 }
-.card .front {
+.front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
 }
-.card .front img {
+.front img {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -2;
 }
-
-.card .back {
+.back {
     transform: perspective(600px) rotateY(180deg);
     padding: 15px;
     justify-content: space-between;
@@ -310,27 +294,37 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     background-color: white;
     box-shadow: 0 5px 10px black;
 }
-.card .back .link {
+.link {
     border-top: solid 1px #4b4c4d;
     height: 50px;
     line-height: 50px;
 }
-.card .back .link a {
+.link a {
     margin-top: 20px;
-    color:#4b4c4d;
+    color:#fdfdfd;
+    background-color: #000;
     border: solid 1px;
 }
-.card .back h3{
+.back h3{
+    margin-top: 20px;
     font-family: 'Oswald', sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     letter-spacing: 2px;
     color: #4b4c4d;
 }
-.card .back p{
+.back p{
     letter-spacing: 1px;
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     color: #000;
+}
+.icons {
+    margin: 50px auto;
+    font-size: 100px;
+}
+.icons:hover {
+    animation: fa-beat; 
+    animation-duration: 2s;
 }
 .card:hover .front{
     transform: perspective(600px) rotateY(180deg);
@@ -338,10 +332,18 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+
+/* ESTILO HTML FINAL */
+.iframe-final {
+    width: 100%;
+    height: 15.625rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 5px #4b4c4d;
+}
 /* Estilos del Footer */
 .footer-gallery {
     margin-top: 20px;
 }
 .text-center {
-    background-color: rgb(0, 0, 0)    ;
+    background-color: rgb(0, 0, 0);
 }
