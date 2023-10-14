@@ -29,7 +29,7 @@
 <body>
     <!-- menu de navegacion-->  
     <header class="containerCont">
-        <nav class="navbar navbar-expand-xl navbar-light border border-light">
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top bg-black">
             <div class="container-fluid">
                 <button class="navbar-toggler animate__flip ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
                         aria-label="Toggle navigation">
@@ -56,12 +56,10 @@
             </div>
         </nav>
     </header>  
-                                                                            <!-- musica de portada -->
-    <audio src="./assets/audio/Soda Stereo - Entre Caníbales.mp3" ></audio>
-                                                                            <!-- imagen de portada -->
-    <div class="wallp-image d-flex justify-content-center aling-items-center"></div>
-                                                                            <!-- inicio del main -->
+    <!-- inicio del main -->
     <main class="main">
+        <!-- imagen de portada -->
+        <section class="wallp-image d-flex justify-content-center aling-items-center mt-5"></section>
         <section class="title-index mt-5">
             <h1 class="animate__animated animate__backInLeft">11 DE AGOSTO DE 1959</h1>
             <p class="mt-5">Gustavo Cerati nació el 11 de agosto de 1959 en Capital Federal, Buenos Aires, Argentina. Su 
@@ -92,10 +90,12 @@
                         formaciones (incluyendo por momentos a músicos como Richard Coleman, Daniel Melero y Andrés Calamaro entre otros) y 
                         distintos nombres, se constituye formalmente Soda Stereo.</p>
             </div>
+                                                                                        <!-- musica de portada -->
+            <!-- <audio src="./assets/audio/Soda Stereo - Entre Caníbales.mp3" autoplay controls></audio> -->
         </section>
     </main>
                                                         <!-- Footer -->
-    <footer class="bg-black text-center text-white border border-light">
+    <footer class="bg-black text-center text-white">
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/emaanuuelll/" role="button">

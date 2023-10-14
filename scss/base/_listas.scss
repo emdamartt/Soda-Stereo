@@ -1,0 +1,15 @@
+/*LISTAS*/
+$colores: 
+red,
+green,
+yellow,
+blue;
+
+/*EJEMPLO*/
+
+.button-ok {
+    background-color: nth($colores,2);
+}
+.button-cancel{
+    background-color: nth($colores,1);
+}

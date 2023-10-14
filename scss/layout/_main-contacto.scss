@@ -1,0 +1,74 @@
+/*Estilos contacto*/
+.contacto{
+    background-image: url(../assets/img/fondo\ Contactos2.jpg);
+    background-position: center;
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    .contacto-form{
+        font-size: 2.3em;
+        text-align: center;
+        letter-spacing: 7px;
+        font-family: 'Oswald', sans-serif;
+        color: rgba(255, 255, 255, 0.918);
+        padding: 50px 0;
+    }
+    #form{
+        width: 500px;
+        backdrop-filter: blur(2px);
+        input{
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.875em;
+            height: 3.125rem;
+            padding: 0px 15px 0px 15px;
+            outline: none;
+            background-color: #0c0c0c34;
+            color: #000000ce;
+            border: solid 1px #b3aca7;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #3837370e;
+                color: #e2dedb;
+            }
+        }
+        textarea{
+            height: 6.875rem;
+            max-height: 110px;
+            padding: 15px;
+            background: transparent;
+            outline: none;
+            background-color: #0c0c0c34;
+            color: #726659;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.875em;
+            border: solid 1px #b3aca7;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #3837370e;
+                color: #e2dedb;
+            }
+        }
+        #submit{
+            padding: 0;
+            margin: -5px 0px 0px 0px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.875em;
+            color: #fffbf8;
+            outline:none;
+            cursor: pointer;
+            border: solid 1px #b3aca7;
+            border-top: none;
+            &:hover{
+                background-color: #3837370e;
+                color: #000000;
+            }
+        }
+    }
+}
+        

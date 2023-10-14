@@ -1,1 +1,11 @@
-@import "../scss/components/inicio"
+@import './base/google-fonts';
+@import './base/variables';
+@import './base/reset';
+@import './layout/header';
+@import './layout/header-otros';
+@import './layout/main-index';
+@import './layout/main-galeria';
+@import './layout/main-contacto';
+@import './layout/media/media520';
+@import './layout/main-discografia';
+@import './layout/_footer';

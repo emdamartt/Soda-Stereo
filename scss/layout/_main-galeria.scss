@@ -1,0 +1,18 @@
+/* Estilos html galeria */
+
+    .gallery-container {
+        .gallery-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            margin-top: 50px;
+            font-size: 3.3em;
+            letter-spacing: 7px;
+        }
+        p{
+            margin:30px 20px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.25rem;
+        }
+    }

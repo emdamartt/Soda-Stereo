@@ -1,3 +1,265 @@
+/* Google Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+/*Header index*/
+.containerCont {
+  background-color: rgb(0, 0, 0);
+}
+.containerCont .list li {
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.containerCont .nav-link {
+  font-family: "Oswald", sans-serif;
+}
+.containerCont .list li a {
+  margin: 0 40px;
+}
+.containerCont .list li a:hover {
+  background-color: rgba(253, 253, 253, 0.1764705882);
+  border-radius: 6px;
+  border-bottom: 20px;
+}
+
+/* header otros html*/
+.containerCont .navbar-rest {
+  margin-top: -30px;
+}
+
+/*titulos y parrafos y fondo index*/
+main .wallp-image {
+  background-image: url(../assets/img/fondo\ inicio.jpg);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .title-index h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 3.3em;
+  animation: backInLeft;
+  animation-duration: 5s;
+}
+main .title-index p {
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+main #gallery {
+  margin: 0;
+  padding: 1.563rem;
+}
+main #gallery img {
+  width: 100%;
+  height: 28rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 5px #4b4c4d;
+  opacity: 2;
+  transition: all 300ms;
+  object-fit: cover;
+}
+main #gallery .col-lg-4 {
+  margin: 0;
+  padding: 1.563rem;
+}
+
+/* Estilos html galeria */
+.gallery-container .gallery-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  margin-top: 50px;
+  font-size: 3.3em;
+  letter-spacing: 7px;
+}
+.gallery-container p {
+  margin: 30px 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
+}
+
+/*Estilos contacto*/
+.contacto {
+  background-image: url(../assets/img/fondo\ Contactos2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.contacto .contacto-form {
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+  font-family: "Oswald", sans-serif;
+  color: rgba(255, 255, 255, 0.918);
+  padding: 50px 0;
+}
+.contacto #form {
+  width: 500px;
+  backdrop-filter: blur(2px);
+}
+.contacto #form input {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.875em;
+  height: 3.125rem;
+  padding: 0px 15px 0px 15px;
+  outline: none;
+  background-color: rgba(12, 12, 12, 0.2039215686);
+  color: rgba(0, 0, 0, 0.8078431373);
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+.contacto #form input:hover {
+  background-color: rgba(56, 55, 55, 0.0549019608);
+  color: #e2dedb;
+}
+.contacto #form textarea {
+  height: 6.875rem;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  background-color: rgba(12, 12, 12, 0.2039215686);
+  color: #726659;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+.contacto #form textarea:hover {
+  background-color: rgba(56, 55, 55, 0.0549019608);
+  color: #e2dedb;
+}
+.contacto #form #submit {
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.875em;
+  color: #fffbf8;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+.contacto #form #submit:hover {
+  background-color: rgba(56, 55, 55, 0.0549019608);
+  color: #000000;
+}
+
+/* media queries html contacto */
+@media (max-width: 520px) {
+  #form {
+    width: 80%;
+  }
+  .contacto-form {
+    font-size: 1.5em;
+  }
+}
+/* Estilos discografia */
+.back-color {
+  background-color: rgb(255, 238, 0);
+}
+.back-color .container .title-discografy {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.3em;
+}
+.back-color .container .card {
+  position: relative;
+  width: 100%;
+  height: 21.875rem;
+  background: transparent;
+}
+.back-color .container .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.9s;
+}
+.back-color .container .card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.back-color .container .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.back-color .container .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  padding: 15px;
+  justify-content: space-between;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 5px 10px black;
+}
+.back-color .container .card .back h3 {
+  margin-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #4b4c4d;
+}
+.back-color .container .card .back h3 p {
+  letter-spacing: 1px;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+.back-color .container .card .back .link {
+  border-top: solid 1px #4b4c4d;
+  height: 50px;
+  line-height: 50px;
+}
+.back-color .container .card .back .link a {
+  margin-top: 20px;
+  color: #fdfdfd;
+  background-color: #000;
+  border: solid 1px;
+}
+.back-color .container .card .back .icons {
+  margin: 50px auto;
+  font-size: 100px;
+}
+.back-color .container .card .back .icons:hover {
+  animation: fa-beat;
+  animation-duration: 2s;
+}
+.back-color .container .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-color .container .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/*Estilos footer*/
+.footer-gallery {
+  margin-top: 20px;
+}
+
+.text-center {
+  background-color: rgb(0, 0, 0);
+}
 
 /*# sourceMappingURL=style.css.map */
