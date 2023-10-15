@@ -1,15 +1,13 @@
-/*LISTAS*/
-$colores: 
-red,
-green,
-yellow,
-blue;
+$colors: 
+#000,
+#fdfdfd2d,
+#4b4c4d,
+#fdfdfd,
+rgba(255, 255, 255, 0.918),
+rgb(255, 238, 0),
+#000000ce,
+#b3aca7,
+#3837370e,
+#e2dedb,
+#fffbf8,
 
-/*EJEMPLO*/
-
-.button-ok {
-    background-color: nth($colores,2);
-}
-.button-cancel{
-    background-color: nth($colores,1);
-}

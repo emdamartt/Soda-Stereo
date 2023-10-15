@@ -1,6 +1,7 @@
 /* Google Fonts*/
 @import url("https://fonts.googleapis.com/css?family=Oswald:500");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+/*Reset*/
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +10,7 @@
 
 /*Header index*/
 .containerCont {
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
 }
 .containerCont .list li {
   list-style: none;
@@ -36,7 +37,7 @@
 
 /*titulos y parrafos y fondo index*/
 main .wallp-image {
-  background-image: url(../);
+  background-image: url(../assets/img/fondo\ inicio.jpg);
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +88,7 @@ main #gallery .col-lg-4 {
 .gallery-container p {
   margin: 30px 20px;
   font-family: "Oswald", sans-serif;
-  font-size: 1.25rem;
+  font-size: 15px;
 }
 
 /*Estilos contacto*/
@@ -103,7 +104,7 @@ main #gallery .col-lg-4 {
   text-align: center;
   letter-spacing: 7px;
   font-family: "Oswald", sans-serif;
-  color: rgba(255, 255, 255, 0.918);
+  color: #e2dedb;
   padding: 50px 0;
 }
 .contacto #form {
@@ -117,7 +118,7 @@ main #gallery .col-lg-4 {
   padding: 0px 15px 0px 15px;
   outline: none;
   background-color: rgba(12, 12, 12, 0.2039215686);
-  color: rgba(0, 0, 0, 0.8078431373);
+  color: #000;
   border: solid 1px #b3aca7;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -126,7 +127,7 @@ main #gallery .col-lg-4 {
 }
 .contacto #form input:hover {
   background-color: rgba(56, 55, 55, 0.0549019608);
-  color: #e2dedb;
+  color: #fdfdfd;
 }
 .contacto #form textarea {
   height: 6.875rem;
@@ -135,7 +136,7 @@ main #gallery .col-lg-4 {
   background: transparent;
   outline: none;
   background-color: rgba(12, 12, 12, 0.2039215686);
-  color: #726659;
+  color: #4b4c4d;
   font-family: "Oswald", sans-serif;
   font-size: 0.875em;
   border: solid 1px #b3aca7;
@@ -161,7 +162,7 @@ main #gallery .col-lg-4 {
 }
 .contacto #form #submit:hover {
   background-color: rgba(56, 55, 55, 0.0549019608);
-  color: #000000;
+  color: #000;
 }
 
 /* media queries html contacto */
@@ -186,6 +187,7 @@ main #gallery .col-lg-4 {
   width: 100%;
   height: 21.875rem;
   background: transparent;
+  border: none;
 }
 .back-color .container .card .face {
   position: absolute;
@@ -211,8 +213,8 @@ main #gallery .col-lg-4 {
   padding: 15px;
   justify-content: space-between;
   text-align: center;
-  background-color: white;
-  box-shadow: 0 5px 10px black;
+  background-color: #fdfdfd;
+  box-shadow: 0 5px 10px #000;
 }
 .back-color .container .card .back h3 {
   margin-top: 20px;
@@ -224,19 +226,24 @@ main #gallery .col-lg-4 {
 .back-color .container .card .back h3 p {
   letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: #000;
 }
 .back-color .container .card .back .link {
-  border-top: solid 1px #4b4c4d;
+  border-top: solid 1px #fdfdfd;
   height: 50px;
   line-height: 50px;
 }
 .back-color .container .card .back .link a {
   margin-top: 20px;
   color: #fdfdfd;
-  background-color: #000;
-  border: solid 1px;
+  background-color: #686969;
+  font-weight: 600;
+}
+.back-color .container .card .back .link a:hover {
+  background-color: rgb(255, 238, 0);
+  color: #000;
+  font-weight: 600;
 }
 .back-color .container .card .back .icons {
   margin: 50px auto;

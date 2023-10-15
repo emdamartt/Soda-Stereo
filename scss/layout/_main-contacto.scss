@@ -9,29 +9,29 @@
         font-size: 2.3em;
         text-align: center;
         letter-spacing: 7px;
-        font-family: 'Oswald', sans-serif;
-        color: rgba(255, 255, 255, 0.918);
+        font-family: $font-text;
+        color: nth($colors ,10);
         padding: 50px 0;
     }
     #form{
         width: 500px;
         backdrop-filter: blur(2px);
         input{
-            font-family: 'Oswald', sans-serif;
+            font-family: $font-text;
             font-size: 0.875em;
             height: 3.125rem;
             padding: 0px 15px 0px 15px;
             outline: none;
-            background-color: #0c0c0c34;
-            color: #000000ce;
-            border: solid 1px #b3aca7;
+            background-color: $bg-form;
+            color: nth($colors , 1);
+            border: solid 1px nth($colors , 8);
             transition: all 0.3s ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -ms-transition: all 0.3s ease-in-out;
             &:hover{
-                background-color: #3837370e;
-                color: #e2dedb;
+                background-color: nth($colors , 9);
+                color: nth($colors , 4);
             }
         }
         textarea{
@@ -40,33 +40,33 @@
             padding: 15px;
             background: transparent;
             outline: none;
-            background-color: #0c0c0c34;
-            color: #726659;
-            font-family: 'Oswald', sans-serif;
+            background-color:$bg-form;
+            color: nth($colors ,3);
+            font-family: $font-text;
             font-size: 0.875em;
-            border: solid 1px #b3aca7;
+            border: solid 1px nth($colors, 8);
             transition: all 0.3s ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -ms-transition: all 0.3s ease-in-out;
             &:hover{
-                background-color: #3837370e;
-                color: #e2dedb;
+                background-color: nth($colors , 9);
+                color: nth($colors , 10);
             }
         }
         #submit{
             padding: 0;
             margin: -5px 0px 0px 0px;
-            font-family: 'Oswald', sans-serif;
+            font-family: $font-text;
             font-size: 0.875em;
-            color: #fffbf8;
+            color:nth($colors , 11);
             outline:none;
             cursor: pointer;
-            border: solid 1px #b3aca7;
+            border: solid 1px nth($colors , 8);
             border-top: none;
             &:hover{
-                background-color: #3837370e;
-                color: #000000;
+                background-color: $bg-hover-contact;
+                color: nth($colors , 1);
             }
         }
     }
