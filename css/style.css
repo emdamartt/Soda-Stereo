@@ -174,7 +174,7 @@ main #gallery .col-lg-4 {
     font-size: 1.5em;
   }
 }
-/* Estilos discografia */
+/* ESTILOS HTML DISCOGRAFIA */
 .back-color {
   background-color: rgb(255, 238, 0);
 }
@@ -258,6 +258,19 @@ main #gallery .col-lg-4 {
 }
 .back-color .container .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
+}
+
+/*ESTILOS HTML FINAL*/
+.final {
+  background-color: rgb(224, 185, 12);
+}
+.final .title-index h1 {
+  font-size: 3.3em;
+  font-family: "Oswald", sans-serif;
+}
+.final .title-index p {
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
 }
 
 /*Estilos footer*/
