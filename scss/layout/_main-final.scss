@@ -11,4 +11,12 @@
             font-family: $font-text;
         }
     }
+    .imagen-final{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-bottom: 20px;
+        }
+    }
 }

@@ -174,6 +174,24 @@ main #gallery .col-lg-4 {
     font-size: 1.5em;
   }
 }
+/* media queries html contacto */
+@media (max-width: 600px) {
+  .final {
+    width: 100%;
+  }
+  .final .title-index .par {
+    margin: 5px 20px;
+  }
+  .final .imagen-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .final .imagen-final img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
 /* ESTILOS HTML DISCOGRAFIA */
 .back-color {
   background-color: rgb(255, 238, 0);
@@ -270,6 +288,14 @@ main #gallery .col-lg-4 {
 .final .title-index p {
   font-size: 15px;
   font-family: "Oswald", sans-serif;
+}
+.final .imagen-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.final .imagen-final img {
+  margin-bottom: 20px;
 }
 
 /*Estilos footer*/
