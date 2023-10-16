@@ -54,19 +54,25 @@
                 .link{
                     border-top: solid 1px nth($colors ,4 );
                     height: 50px;
-                    line-height: 50px;
+                    line-height: map-get($size , l);
                     a{
                         margin-top: 20px;
                         color:nth($colors ,4 );
                         background-color:$bg-buttom;
-                        font-weight: 600;
+                        font-weight: map-get($size , lw);
                         &:hover{
                             background-color: $bg-disc;
                             color: nth($colors ,1 );
-                            font-weight: 600;
+                            font-weight: map-get($size ,fw);
                             
                         }
                     }
+                } 
+                .butt{
+                    @extend .link;
+                } //EXTENDS
+                .butt-extend{
+                    @extend .link;
                 }
                 .icons{
                     margin: 50px auto;

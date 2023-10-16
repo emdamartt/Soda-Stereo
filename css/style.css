@@ -229,18 +229,17 @@ main #gallery .col-lg-4 {
   font-size: 15px;
   color: #000;
 }
-.back-color .container .card .back .link {
+.back-color .container .card .back .link, .back-color .container .card .back .butt-extend, .back-color .container .card .back .butt {
   border-top: solid 1px #fdfdfd;
   height: 50px;
   line-height: 50px;
 }
-.back-color .container .card .back .link a {
+.back-color .container .card .back .link a, .back-color .container .card .back .butt-extend a, .back-color .container .card .back .butt a {
   margin-top: 20px;
   color: #fdfdfd;
   background-color: #686969;
-  font-weight: 600;
 }
-.back-color .container .card .back .link a:hover {
+.back-color .container .card .back .link a:hover, .back-color .container .card .back .butt-extend a:hover, .back-color .container .card .back .butt a:hover {
   background-color: rgb(255, 238, 0);
   color: #000;
   font-weight: 600;
