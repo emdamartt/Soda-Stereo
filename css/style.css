@@ -12,6 +12,9 @@
 .containerCont {
   background-color: #000;
 }
+.containerCont .list {
+  align-items: center;
+}
 .containerCont .list li {
   list-style: none;
   text-decoration: none;
