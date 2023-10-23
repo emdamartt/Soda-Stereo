@@ -12,22 +12,26 @@
 .containerCont {
   background-color: #000;
 }
-.containerCont .list {
+
+.list {
   align-items: center;
 }
-.containerCont .list li {
+
+.list li {
   list-style: none;
   text-decoration: none;
   position: relative;
   display: inline-block;
 }
-.containerCont .nav-link {
+
+.nav-link {
   font-family: "Oswald", sans-serif;
 }
-.containerCont .list li a {
+
+.list li a {
   margin: 0 40px;
 }
-.containerCont .list li a:hover {
+.list li a:hover {
   background-color: rgba(253, 253, 253, 0.1764705882);
   border-radius: 6px;
   border-bottom: 20px;
@@ -177,13 +181,17 @@ main #gallery .col-lg-4 {
     font-size: 1.5em;
   }
 }
-/* media queries html contacto */
+/* media queries html final */
 @media (max-width: 600px) {
   .final {
     width: 100%;
   }
   .final .title-index .par {
     margin: 5px 20px;
+  }
+  .final .containerFirstGal .iframe-final {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .final .imagen-final {
     display: flex;
@@ -292,6 +300,11 @@ main #gallery .col-lg-4 {
   font-size: 15px;
   font-family: "Oswald", sans-serif;
 }
+.final .iframe-final {
+  width: 70%;
+  height: 450px;
+  border-radius: 50px;
+}
 .final .imagen-final {
   display: flex;
   justify-content: center;
@@ -299,6 +312,8 @@ main #gallery .col-lg-4 {
 }
 .final .imagen-final img {
   margin-bottom: 20px;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 20px;
 }
 
 /*Estilos footer*/

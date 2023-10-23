@@ -11,12 +11,19 @@
             font-family: $font-text;
         }
     }
+    .iframe-final{
+        width: 70%;
+        height: 450px;
+        border-radius: 50px;
+    }
     .imagen-final{
         display: flex;
         justify-content: center;
         align-items: center;
         img{
             margin-bottom: 20px;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 20px;
         }
     }
 }

@@ -1,4 +1,4 @@
-/* media queries html contacto */
+/* media queries html final */
 @media (max-width:600px){
     .final{
         width: 100% ;
@@ -6,7 +6,13 @@
             .par{
                 margin: 5px 20px;
             }
-        }   
+        }
+        .containerFirstGal{
+            .iframe-final{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }  
         .imagen-final{
                 display: flex;
                 justify-content: center;
