@@ -44,7 +44,7 @@
 
 /*titulos y parrafos y fondo index*/
 main .wallp-image {
-  background-image: url(../../assets/img/fondo-inicio.jpg);
+  background-image: url(../assets/img/fondo-inicio.jpg);
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ main .title-index h1 {
   animation-duration: 5s;
 }
 main .title-index p {
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
   font-family: "Oswald", sans-serif;
   font-size: 15px;
   text-align: center;
