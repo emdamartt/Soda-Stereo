@@ -1,9 +1,13 @@
 /* media queries html contacto */
 @media (max-width:520px){
+    .contacto{
+        height: auto;
+        .contacto-form {
+            font-size: 1.5em;
+        }
+    }
     #form {
         width: 80%;
-}
-.contacto-form {
-    font-size: 1.5em;
-}
+        padding:20px ;
+    }
 } 
